@@ -23,7 +23,10 @@
     echo "You are eligible.<br>";
     }
 
-    /* Logical xor Operator*/
+    /* Logical xor Operator
+    * Both condition cannot be true or false
+    * Either one can be true
+    */
     if($age >= 18 xor $age <= 21){
     echo "You are eligible.<br>";
     }

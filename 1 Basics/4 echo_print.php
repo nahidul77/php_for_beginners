@@ -1,4 +1,8 @@
 <?php
+    /**
+     * echo return no value, return void.
+     * print return 1.
+     */
     echo "Nahidul Islam \n";
 
    echo 'Nahidul Islam'."\n";
