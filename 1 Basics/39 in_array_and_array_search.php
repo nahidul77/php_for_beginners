@@ -1,17 +1,30 @@
 <?php
-$food = array('orange', 'banana', 'apple', 'grapes');
+/**
+ * in_array(mixed $needle, array $haystack, bool $strict = false): bool
+ */
 
-echo in_array("lime", $food);
+$os = array("Mac", "NT", "Irix", "Linux");
 
-/* ---- If Condition InArray------ */
-if (in_array("apple", $food)) {
-    echo "Find Successfully.";
-}else{
-    echo "Can't Find.";	
+if (in_array("Irix", $os)) { //true
+    echo "Got Irix";
 }
 
+/**
+ * If needle is a string, the comparison is done in a case-sensitive manner.
+ */
+if (in_array("mac", $os)) { //false
+    echo "Got mac";
+}
 
-echo in_array(55, $food,true); /* ---- strict mode------ */
+$food = array('orange', 'banana', 'apple', 'grapes', '55');
+
+
+/**
+ * If the third parameter strict is set to true then the in_array() function will also check the types of the needle in the haystack.
+ *  ---- strict mode------
+ */
+
+echo in_array(55, $food, true); //false 
 
 
 /* --------Multipledimensional Associative Array------------- */
